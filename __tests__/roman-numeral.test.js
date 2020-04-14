@@ -38,4 +38,7 @@ describe('romanize', () => {
     test ('units for numbers between 50 - 59', () => {
       expect(romanize('55')).toEqual('LV')
     });
+    test ('units for numbers between 40 - 49', () => {
+      expect(romanize('44')).toEqual('XLIV')
+    });
 });
