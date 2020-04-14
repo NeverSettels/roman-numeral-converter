@@ -1,4 +1,4 @@
-function romanize(num) {
+export function romanize(num) {
   var tempArr = num.split('');
   var numArr = tempArr.map(number => parseInt(number)).reverse();
   var roman = '';
@@ -56,12 +56,12 @@ function romanize(num) {
 
 
 
-$(document).ready(() => {
-  $('#form1').submit(e => {
-    e.preventDefault();
-    var input = $("#input").val();
-    var out = romanize(input);
-    $('#show-num').html(`<h2>${out}</h2>`);
-    $("#show-num").slideToggle('.no-show');
-  })
-})
+// $(document).ready(() => {
+//   $('#form1').submit(e => {
+//     e.preventDefault();
+//     var input = $("#input").val();
+//     var out = romanize(input);
+//     $('#show-num').html(`<h2>${out}</h2>`);
+//     $("#show-num").slideToggle('.no-show');
+//   })
+// })
