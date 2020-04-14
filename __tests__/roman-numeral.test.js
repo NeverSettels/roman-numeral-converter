@@ -19,5 +19,8 @@ describe('romanize', () => {
       expect(romanize('5')).toEqual('V')
     });
 
+    test ('units place for number equal to 4', () => {
+      expect(romanize('4')).toEqual('IV')
+    });
 });
 
