@@ -54,4 +54,7 @@ describe('romanize', () => {
       expect(romanize('550')).toEqual('DL')
     });
     
+    test ('units for numbers between 400-499', () => {
+      expect(romanize('456')).toEqual('CDLVI')
+    });
   });
