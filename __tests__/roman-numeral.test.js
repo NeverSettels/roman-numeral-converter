@@ -41,4 +41,10 @@ describe('romanize', () => {
     test ('units for numbers between 40 - 49', () => {
       expect(romanize('44')).toEqual('XLIV')
     });
-});
+    test ('units for numbers between 90 - 99', () => {
+      expect(romanize('99')).toEqual('XCIX')
+    });
+    test ('units for numbers between 100 - 399', () => {
+      expect(romanize('274')).toEqual('CCLXXIV')
+    });
+  });
