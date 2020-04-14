@@ -6,4 +6,9 @@ describe('romanize', () => {
       expect(romanize('4500')).toEqual('no roman numerals for numbers this big')
     });
 
+    test('Units place for  numbers between 1-9', ()=>{
+      expect(romanize('2')).toEqual('II')
+    });
+
 });
+
