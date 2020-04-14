@@ -29,5 +29,9 @@ describe('romanize', () => {
 
     test ('units for numbers up to 39', ()=>{
       expect(romanize('37')).toEqual('XXXVII')
-    })
+    });
+
+    test ('units for numbers between 60 & 89', () => {
+      expect(romanize('75')).toEqual('LXXV')
+    });
 });
