@@ -22,5 +22,9 @@ describe('romanize', () => {
     test ('units place for number equal to 4', () => {
       expect(romanize('4')).toEqual('IV')
     });
+
+    test ('units place for number equal to 9', () => {
+      expect(romanize('9')).toEqual('IX')
+    });
 });
 
