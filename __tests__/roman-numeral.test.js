@@ -10,8 +10,14 @@ describe('romanize', () => {
       expect(romanize('2')).toEqual('II')
       
     });
-    test ('units place for numers between 6-8', () => {
-    expect(romanize('7')).toEqual('VII')
+    
+    test ('units place for numbers between 6-8', () => {
+      expect(romanize('7')).toEqual('VII')
     });
+    
+    test ('units place for number equal to 5', () => {
+      expect(romanize('5')).toEqual('V')
+    });
+
 });
 
