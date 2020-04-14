@@ -7,8 +7,7 @@ describe('romanize', () => {
     });
 
     test('Units place for  numbers between 1-3 ', ()=>{
-      expect(romanize('2')).toEqual('II')
-      
+      expect(romanize('3')).toEqual('III')
     });
     
     test ('units place for numbers between 6-8', () => {
