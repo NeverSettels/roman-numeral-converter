@@ -37,7 +37,7 @@ export function romanize(num) {
         if (number <= 3) {
           roman += "C".repeat(number)
         } else if (number >= 6 && number <= 8) {
-          roman += ("L" + "C".repeat(number - 5)).split('').reverse().join('')
+          roman += ("D" + "C".repeat(number - 5)).split('').reverse().join('')
         } else if (number === 5) {
           roman += 'D'
         } else if (number === 4) {

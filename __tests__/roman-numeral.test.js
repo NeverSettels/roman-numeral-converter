@@ -47,4 +47,8 @@ describe('romanize', () => {
     test ('units for numbers between 100 - 399', () => {
       expect(romanize('274')).toEqual('CCLXXIV')
     });
+    test ('units for numbers between 600 & 899', () => {
+      expect(romanize('752')).toEqual('DCCLII')
+    });
+    
   });
